@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📊 Crypto Price Tracker</h1>
+
+    <select id="coinSelect">
+      <option value="bitcoin">Bitcoin (BTC)</option>
+      <option value="ethereum">Ethereum (ETH)</option>
+      <option value="solana">Solana (SOL)</option>
+      <option value="dogecoin">Dogecoin (DOGE)</option>
+    </select>
+
+    <div class="card">
+      <h2 id="coinName">Bitcoin</h2>
+      <p>💰 Price: <span id="price">--</span></p>
+      <p>📈 24h Change: <span id="change">--</span></p>
+    </div>
+
+    <button onclick="getPrice()">🔄 Refresh Price</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
